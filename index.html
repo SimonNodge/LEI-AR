@@ -4,11 +4,14 @@
 	<body style='margin : 0px; overflow: hidden;'>
 		<a-scene embedded arjs='sourceType: webcam;'>
 			<a-assets>
-				<a-asset-item id="Heart-Model-gltf" src="Objects/Heart-Model.gltf"></a-asset-item>
+				<a-asset-item id="Skull-Model-obj" src="Objects/Skull-Model.obj"></a-asset-item>
+				<a-asset-item id="Skull-Model-mtl" src="Objects/Skull-Model.mtl"></a-asset-item>
+				<a-asset-item id="Heart-Model-obj" src="Objects/Heart-Model.obj"></a-asset-item>
+				<a-asset-item id="Heart-Model-mtl" src="Objects/Heart-Model.mtl"></a-asset-item>
 			</a-assets>
 			<a-entity rotation="0 0 0" 
 			animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
-			obj-model="obj: #HeartModel-gltf">
+			obj-model="obj: #HeartModel-gltf; mtl: #Heart-Model-mtl">
 			</a-entity>
 			<a-marker-camera preset='custom' type='pattern' url='Markers/Heart-Marker.patt'></a-marker-camera>
 		</a-scene>
