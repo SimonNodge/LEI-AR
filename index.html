@@ -5,9 +5,10 @@
 		<a-scene embedded arjs='sourceType: webcam;'>
 			<a-assets>
 				<a-asset-item id="Model-obj" src="Objects/Model.obj"></a-asset-item>
+				<a-asset-item id="Model-mtl" src="Objects/Model.mtl"></a-asset-item>
 			</a-assets>
-			<a-entity obj-model="obj: #Model-obj;"></a-entity>
-			<a-marker-camera preset='hiro'></a-marker-camera>
+			<a-entity obj-model="obj: #Model-obj; mtl: #Model-mtl"></a-entity>
+			<a-marker-camera preset='custom' type='pattern' url='Markers/Skull-Marker.patt'></a-marker-camera>
 		</a-scene>
 	</body>
 </html>
