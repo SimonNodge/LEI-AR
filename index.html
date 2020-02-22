@@ -1,6 +1,7 @@
 <html>
 	<script src="Scripts/aframe.min.js"></script>
 	<script src="Scripts/aframe-ar.js"></script>
+	<script src=”Scripts/aframe-extras.loaders.min.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
 		<a-scene embedded arjs='sourceType: webcam;'>
 			<a-assets>
@@ -20,7 +21,7 @@
 			<a-marker preset='custom' type='pattern' url='Markers/Skull-Marker.patt'>
 				<a-entity rotation="0 0 0" 
 				animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
-				gltf-model="url(Objects/Stormtrooper-Model/Stormtrooper-Model.gltf)"
+				gltf-model-next=”src: url(Objects/Stormtrooper-Model/Stormtrooper-Model.gltf);”
 				</a-entity>
 			</a-marker>
 			<a-marker preset='custom' type='pattern' url='Markers/LEI-Marker.patt'>
