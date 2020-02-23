@@ -1,0 +1,36 @@
+<html>
+	<script src="Scripts/aframe.min.js"></script>
+	<script src="Scripts/aframe-ar.js"></script>
+	<script src=”Scripts/aframe-extras.loaders.min.js"></script>
+	<body style='margin : 0px; overflow: hidden;'>
+		<a-scene embedded arjs='sourceType: webcam;'>
+			<a-assets>
+				<a-asset-item id="Skull-Model-obj" src="Objects/Skull-Model.obj"></a-asset-item>
+				<a-asset-item id="Skull-Model-mtl" src="Objects/Skull-Model.mtl"></a-asset-item>
+				<a-asset-item id="Heart-Model-obj" src="Objects/Heart-Model.obj"></a-asset-item>
+				<a-asset-item id="Heart-Model-mtl" src="Objects/Heart-Model.mtl"></a-asset-item>
+				<a-asset-item id="LEI-Model-obj" src="Objects/LEI-Model.obj"></a-asset-item>
+				<a-asset-item id="LEI-Model-mtl" src="Objects/LEI-Model.mtl"></a-asset-item>
+			</a-assets>
+			<a-marker preset='custom' type='pattern' url='Markers/Heart-Marker.patt'>
+				<a-entity rotation="0 0 0" 
+				animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
+				obj-model="obj: #Heart-Model-obj; mtl: #Heart-Model-mtl">
+				</a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' url='Markers/Skull-Marker.patt'>
+				<a-entity rotation="0 0 0" 
+				animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
+				obj-model="obj: #Skull-Model-obj; mtl: #Skull-Model-mtl">
+				</a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' url='Markers/LEI-Marker.patt'>
+				<a-entity rotation="0 0 0" 
+				animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
+				obj-model="obj: #LEI-Model-obj; mtl: #LEI-Model-mtl">
+				</a-entity>
+			</a-marker>
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
