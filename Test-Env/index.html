@@ -5,6 +5,10 @@
 	<body style='margin : 0px; overflow: hidden;'>
 		<a-scene renderer='gammaOutput: true'  embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'>
 			<a-assets>
+				<a-asset-item id="BB8-Model-glb" src="Objects/BB8-Model.glb"></a-asset-item>
+				<a-asset-item id="Skull-Model-glb" src="Objects/Skull-Model.glb"></a-asset-item>
+				<a-asset-item id="Heart-Model-glb" src="Objects/Heart-Model.glb"></a-asset-item>
+				<a-asset-item id="LEI-Model-glb" src="Objects/LEI-Model.glb"></a-asset-item>
 				<a-asset-item id="Combustion_Engine-Model-glb" src="Objects/Combustion_Engine-Model.glb"></a-asset-item>
 				<a-asset-item id="Blue_Whale-Model-glb" src="Objects/Blue_Whale-Model.glb"></a-asset-item>
 				<a-asset-item id="Beryllium_8-Model-glb" src="Objects/Beryllium_8-Model.glb"></a-asset-item>
@@ -17,6 +21,18 @@
 			</a-marker>
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Beryllium_8-Marker.patt'>
 				<a-entity gltf-model="#Beryllium_8-Model-glb" position="0 1 0" scale="0.8 0.8 0.8" animation-mixer="clip:Animation; loop:infinite"></a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/BB8-Marker.patt'>
+				<a-entity gltf-model="#BB8-Model-glb" position="0.7 0 0" scale="0.6 0.6 0.6" animation-mixer="clip:Take 01; loop:infinite"></a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Skull-Marker.patt'>
+				<a-entity gltf-model="#Skull-Model-glb" position="0 .4 0" scale="0.8 0.8 0.8"></a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Heart-Marker.patt'>
+				<a-entity gltf-model="#Heart-Model-glb" scale="0.1 0.1 0.1" rotation="180 0 0" position="0 1 0" animation-mixer="clip:Take 001; loop:infinite"></a-entity>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/LEI-Marker.patt'>
+				<a-entity gltf-model="#LEI-Model-glb" position="0 0.6 0" scale="0.6 0.6 0.6" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
