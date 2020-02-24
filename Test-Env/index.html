@@ -3,7 +3,7 @@
 	<script src="Scripts/aframe-ar.js"></script>
 	<script src="Scripts/aframe-extras.min.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
-		<a-scene embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'>
+		<a-scene renderer.outputEncoding = THREE.sRGBEncoding;  embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;'>
 			<a-assets>
 				<a-asset-item id="Combustion_Engine-Model-glb" src="Objects/Combustion_Engine-Model.glb"></a-asset-item>
 				<a-asset-item id="Blue_Whale-Model-glb" src="Objects/Blue_Whale-Model.glb"></a-asset-item>
