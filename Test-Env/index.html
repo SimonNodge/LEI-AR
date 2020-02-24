@@ -1,17 +1,14 @@
 <html>
 	<script src="Scripts/aframe.min.js"></script>
 	<script src="Scripts/aframe-ar.js"></script>
-	<script src=”Scripts/aframe-extras.loaders.min.js"></script>
+	<script src="Scripts/aframe-extras.min.js"></script>
 	<body style='margin : 0px; overflow: hidden;'>
 		<a-scene embedded arjs='sourceType: webcam;'>
 			<a-assets>
-				<a-asset-item id="Skull-Model-glb" src="Objects/Skull-Model.glb"></a-asset-item>
+				<a-asset-item id="BB8-Model-glb" src="Objects/BB8-Model.glb"></a-asset-item>
 			</a-assets>
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Skull-Marker.patt'>
-				<a-entity rotation="0 0 0" 
-				animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"
-				gltf-model-next="#Skull-Model-obj">
-				</a-entity>
+				<a-entity gltf-model="#BB8-Model-glb"></a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
