@@ -10,12 +10,7 @@
   			</a-assets>
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Teacup-Marker.patt'>
 				<a-video src="#Test-Video" position="0 1.2 0" width="2.5" height="1.40625" play="true"></a-video>
-				<a-entity
-  					position="0 0.3 0"
-					geometry="primitive: plane; width: 2.5; height: .2;"
- 					material="color: white"
-  					text="value: Touch the black box to play the video.; color: black; align: center;">
-				</a-entity>
+				<a-text value="Touch the black box to play the video." color="white" align="center" position="0 0.3 0"></a-text>
 			</a-marker>
 			<a-entity camera></a-entity>
 			
