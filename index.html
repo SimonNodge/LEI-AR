@@ -13,6 +13,7 @@
 				<a-asset-item id="Blue_Whale-Model-glb" src="Objects/Blue_Whale-Model.glb"></a-asset-item>
 				<a-asset-item id="Beryllium_8-Model-glb" src="Objects/Beryllium_8-Model.glb"></a-asset-item>
 				<a-asset-item id="Teacup-Model-glb" src="Objects/Teacup-Model.glb"></a-asset-item>
+				<a-asset-item id="Spitfire-Model-glb" src="Objects/Spitfire-Model.glb"></a-asset-item>
 				<video id="Test-Video" autoplay src="Media/Test-Video.mp4"></video>
 			</a-assets>
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Combustion_Engine-Marker.patt'>
@@ -42,6 +43,9 @@
 			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Moon-Marker.patt'>
 				<a-video src="#Test-Video" position="0 1.2 0" width="2.5" height="1.40625" play="true"></a-video>
 				<a-text value="Touch the box to play the video." color="white" align="center" width="2.5" height="auto" position="0 0.3 0"></a-text>
+			</a-marker>
+			<a-marker preset='custom' type='pattern' response-type='arraybuffer' url='Markers/Spitfire-Marker.patt'>
+				<a-entity gltf-model="#Spitfire-Model-glb" position="0 0 5" scale="1 1 1"></a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
